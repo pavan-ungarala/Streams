@@ -9,7 +9,9 @@ public class ConvertStringsToUpperCase {
 		List<String> names = List.of("alice", "bob", "charlie");
 		System.out.println("List of strings before modified");
 		names.forEach(name -> System.out.print(name + "  "));
-		names = names.stream().map(name -> name.toUpperCase()).toList();
+		names = names.stream()
+					 .map(name -> name.toUpperCase())
+					 .toList();
 		System.out.println();
 		System.out.println("List of strings after modified by Streams");
 		names.forEach(name -> System.out.print(name + "  "));
