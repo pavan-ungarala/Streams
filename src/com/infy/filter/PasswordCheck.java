@@ -10,7 +10,9 @@ public class PasswordCheck {
 		System.out.println("List before checked the criteria");
 		passwords.forEach(pwd -> System.out.print(pwd+"   "));
 		System.out.println();
-		passwords = passwords.stream().filter(pwd -> pwd.matches("^(?=.*\\d).{12,}$")).toList();
+		passwords = passwords.stream()
+							 .filter(pwd -> pwd.matches("^(?=.*\\d).{12,}$"))
+							 .toList();
 		System.out.println("List after checked the criteria");
 		passwords.forEach(pwd -> System.out.print(pwd+"   "));
 	}
