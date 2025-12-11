@@ -3,14 +3,14 @@ package com.infy.entity;
 public class Employee {
 	private String name;
 	private String department;
-	private String location;
+	private String title;
 	private double salary;
 	
-	public Employee(String name, String department, String location, double salary) {
+	public Employee(String name, String department, String title, double salary) {
 		super();
 		this.name = name;
 		this.department = department;
-		this.location = location;
+		this.title = title;
 		this.salary = salary;
 	}
 
@@ -31,11 +31,11 @@ public class Employee {
 	}
 
 	public String getLocation() {
-		return location;
+		return title;
 	}
 
 	public void setLocation(String location) {
-		this.location = location;
+		this.title = location;
 	}
 
 	public double getSalary() {
@@ -48,7 +48,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", department=" + department + ", location=" + location + ", salary=" + salary
+		return "Employee [name=" + name + ", department=" + department + ", location=" + title + ", salary=" + salary
 				+ "]";
 	}
 	
