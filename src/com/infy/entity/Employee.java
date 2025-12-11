@@ -30,12 +30,12 @@ public class Employee {
 		this.department = department;
 	}
 
-	public String getLocation() {
+	public String getTitle() {
 		return title;
 	}
 
-	public void setLocation(String location) {
-		this.title = location;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public double getSalary() {
@@ -48,7 +48,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", department=" + department + ", location=" + title + ", salary=" + salary
+		return "Employee [name=" + name + ", department=" + department + ", title=" + title + ", salary=" + salary
 				+ "]";
 	}
 	
