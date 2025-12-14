@@ -17,6 +17,11 @@ public class PrimePartition {
 	
 	public static void main(String[] args) {
 		List<Integer> nums = List.of(2, 3, 4, 5, 9, 11, 15, 17);
+		//without using method reference at terminal operation
+		/*Map<Boolean, List<Integer>> partMap = nums.stream()
+												  .collect(Collectors.partitioningBy(num -> PrimePartition.isPrime(num))); */
+		
+		//with using method reference at terminal operation
 		Map<Boolean, List<Integer>> partationMap = nums.stream()
 													   .collect(Collectors.partitioningBy(PrimePartition :: isPrime));
 		System.out.println("Prime numbers "+partationMap.get(true));
